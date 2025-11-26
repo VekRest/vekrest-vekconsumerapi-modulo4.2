@@ -30,5 +30,9 @@ public class ClientRegisteredConsumer {
     )
     public void listener(@Payload ConsumerRecord<String, Client> consumerRecord) {
         LOG.info("VEKCONSUMERAPI -> Um cliente deseja realizar cadastro: {}!", consumerRecord.value().toString());
+
+        if(consumerRecord.headers().lastHeader("TOKEN") != null){
+            LOG.info("TOKEN HEADER: {}", new String(consumerRecord.headers().lastHeader("TOKEN").value()));
+        }
     }
 }
