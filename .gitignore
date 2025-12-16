@@ -1,6 +1,6 @@
+### BASE IGNORE ###
 HELP.md
-target/
-.mvn/wrapper/maven-wrapper.jar
+/bin/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
@@ -12,9 +12,18 @@ target/
 .settings
 .springBeans
 .sts4-cache
+.settings/
+
+### IntelliJ IDEA ###
+.ideaHELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
 
 ### IntelliJ IDEA ###
 .idea
+.idea/
 *.iws
 *.iml
 *.ipr
@@ -31,3 +40,38 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Maven ###
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+dependency-reduced-pom.xml
+.flattened-pom.xml
+release.properties
+buildNumber.properties
+.mvn
+mvnw
+mvnw.cmd
+log/
+
+### Package Files ###
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+### Others Files ###
+.DS_Store
+*.class
+*.log
+*.ctxt
+.mtj.tmp/
+hs_err_pid*
+/nbproject/
+/.run/
+**/*.iml
+**/.idea
+out/
